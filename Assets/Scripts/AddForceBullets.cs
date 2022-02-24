@@ -16,7 +16,7 @@ public class AddForceBullets : MonoBehaviour
 
     void Update()
     {
-        rb2D.AddForce(direction * speed);
+        rb2D.velocity = direction.normalized * speed;
         Destroy(gameObject, 1);
     }
 }

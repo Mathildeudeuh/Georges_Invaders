@@ -9,9 +9,18 @@ public class ShootPlayer : MonoBehaviour
 
     void Start()
     {
-        Shoot();
+        StartCoroutine(Shooting());
     }
 
+    private IEnumerator Shooting()
+    {
+        while (true)
+        {
+            Shoot();
+            yield return new WaitForSeconds(0.3f);
+
+        }
+    }
     private void Shoot()
     {
         Instantiate(bullet, transform.position, transform.rotation);
@@ -19,7 +28,7 @@ public class ShootPlayer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Shoot();
+        
     }
     void Update()
     {
