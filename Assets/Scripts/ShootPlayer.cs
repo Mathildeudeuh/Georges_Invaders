@@ -8,11 +8,11 @@ public class ShootPlayer : MonoBehaviour
 
     void Start()
     {
-        
+        Instantiate(bullet, transform.position, transform.rotation);
+
     }
 
     void Update()
     {
-        Instantiate(bullet, transform.position, transform.rotation);
     }
 }
