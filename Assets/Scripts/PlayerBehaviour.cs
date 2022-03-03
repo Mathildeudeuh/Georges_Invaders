@@ -8,6 +8,7 @@ public class PlayerBehaviour : MonoBehaviour
     private Vector2 moveVector2;
     private Rigidbody2D rb2D;
     private AddVelocity addVelocity;
+    [SerializeField] int currentHealth;
 
     void Awake()
     {
@@ -24,6 +25,14 @@ public class PlayerBehaviour : MonoBehaviour
     private void FixedUpdate()
     {
         addVelocity.Move2D(moveVector2);
-
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag.Equals("blabla"))
+        {
+            currentHealth = currentHealth - 1;
+        }
+    }
+
 }
