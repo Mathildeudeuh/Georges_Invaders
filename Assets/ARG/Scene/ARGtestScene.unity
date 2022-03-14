@@ -476,6 +476,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1831193253014197254, guid: d6393ee5d9f65644f84c7e4f2dfeb4a1, type: 3}
+  isRunning: 0
+  minSpawnTime: 0.5
+  maxSpawnTime: 0.5
 --- !u!4 &1376815243
 Transform:
   m_ObjectHideFlags: 0

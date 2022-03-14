@@ -5,10 +5,14 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject enemy;
+    public bool isRunning;
+    public float minSpawnTime, maxSpawnTime;
     // Start is called before the first frame update
     void Start()
     {
-        Spawn();
+        StartCoroutine(SpawnCoroutine());
+        
+       
     }
 
     // Update is called once per frame
@@ -17,9 +21,21 @@ public class Spawner : MonoBehaviour
         
     }
 
+    private IEnumerator SpawnCoroutine()
+    {
+        isRunning = true;
+        while (isRunning)
+        {
+            yield return new WaitForSeconds(Random.Range(minSpawnTime, maxSpawnTime));
+            Spawn();
+        }
+        
+    }
+
+  
+    
     private void Spawn()
     {
-        Instantiate(enemy,transform.position, Quaternion.identity);
+        Instantiate(enemy, transform.position, Quaternion.identity);
     }
-        
 }
