@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1542886214455319120}
   - component: {fileID: -4108660551089991036}
   - component: {fileID: -4861463975381339684}
-  - component: {fileID: -5797898114633776526}
+  - component: {fileID: 6090049513655722767}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 1, y: 0}
   speed: 10
---- !u!114 &-5797898114633776526
+--- !u!114 &6090049513655722767
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,24 +146,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4896133015746596264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Script: {fileID: 11500000, guid: 430c9c0d97d6af045a93ec282be0d9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: 0}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: 
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
