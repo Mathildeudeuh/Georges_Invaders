@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject enemy;
-    public bool isRunning;
+    public GameObject[] enemy;
+    public int index;
+    bool isRunning;
     public float minSpawnTime, maxSpawnTime;
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,7 @@ public class Spawner : MonoBehaviour
     
     private void Spawn()
     {
-        Instantiate(enemy, transform.position, Quaternion.identity);
+        Instantiate(enemy[index], transform.position, Quaternion.identity) ;
+        //Instantiate(enemy, transform.position, Quaternion.identity);
     }
 }

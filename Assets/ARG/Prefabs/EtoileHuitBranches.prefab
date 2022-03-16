@@ -10,11 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2911090279612342490}
   - component: {fileID: 6772271125307895784}
-  - component: {fileID: 4561051970509918882}
   - component: {fileID: -6414653736028892194}
   - component: {fileID: 4707793462398370378}
   m_Layer: 0
-  m_Name: Ennemy
+  m_Name: EtoileHuitBranches
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1831193253014197254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.59, y: 0.94, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -74,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 16029c73da498d2449c1094e176255ab, type: 3}
   m_Color: {r: 1, g: 0.88914996, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -85,27 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &4561051970509918882
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1831193253014197254}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &-6414653736028892194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e1ed62964b5434e8dd0ede494f2f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 20
 --- !u!114 &4707793462398370378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff9cc223aebf814da78b5c04168e7bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frequency: 0.5
-  amplitude: 2
+  frequency: 0.05
+  amplitude: 30
   inverted: 0

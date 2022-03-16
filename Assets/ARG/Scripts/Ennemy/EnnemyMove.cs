@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnnemyMove : MonoBehaviour
 {
     public float speed;
-    private  Rigidbody2D ennemyBody2D;
+    //private  Rigidbody2D ennemyBody2D;
     
     void Awake()
     {
