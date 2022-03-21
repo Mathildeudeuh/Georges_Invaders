@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private PlayerHealthSO currentHealthSO;
+    private SOPlayerHealth currentHealthSO;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
