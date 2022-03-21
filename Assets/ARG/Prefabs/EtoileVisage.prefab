@@ -108,7 +108,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 604368939220911991, guid: 74d803d5f05e1a84ea9f5dab270668f5, type: 3}
       propertyPath: canonAngle
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1043166527927382305, guid: 74d803d5f05e1a84ea9f5dab270668f5, type: 3}
       propertyPath: m_RootOrder
@@ -174,7 +174,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 604368939220911991, guid: 74d803d5f05e1a84ea9f5dab270668f5, type: 3}
       propertyPath: canonAngle
-      value: -30
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 1043166527927382305, guid: 74d803d5f05e1a84ea9f5dab270668f5, type: 3}
       propertyPath: m_RootOrder

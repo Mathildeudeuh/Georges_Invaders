@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6537704059888075004
+--- !u!1 &6943161791945774128
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,58 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6537704059888075007}
-  - component: {fileID: 6537704059888075006}
-  - component: {fileID: 6537704059888075005}
-  - component: {fileID: 6537704059888075000}
+  - component: {fileID: 6943161791945774125}
+  - component: {fileID: 6943161791945774126}
+  - component: {fileID: 6943161791945774127}
   m_Layer: 0
-  m_Name: EnnemySpawnpoint
+  m_Name: "Astrero\xEFde"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6537704059888075007
+--- !u!4 &6943161791945774125
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6537704059888075004}
+  m_GameObject: {fileID: 6943161791945774128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -14.75, y: -0.22, z: -141.63002}
+  m_LocalScale: {x: 45.270588, y: 45.270588, z: 45.270588}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6537704059888075006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6537704059888075004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2728e00e62fb1e6438471ba21954a6e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy:
-  - {fileID: 1831193253014197254, guid: d6393ee5d9f65644f84c7e4f2dfeb4a1, type: 3}
-  - {fileID: 7828069082291071019, guid: fc9b6a3718e0e8c4abcb4ec660fe201d, type: 3}
-  - {fileID: 1387210865317118766, guid: c5182a187b3ddcb4bae1b5f409e5bb33, type: 3}
-  - {fileID: 6943161791945774128, guid: 9c96fd5951edbcf40bdbca138421a27e, type: 3}
-  index: 0
-  minSpawnTime: 5
-  maxSpawnTime: 5
---- !u!212 &6537704059888075005
+--- !u!212 &6943161791945774126
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6537704059888075004}
+  m_GameObject: {fileID: 6943161791945774128}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -93,31 +72,27 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: 1, g: 0.46849027, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.2, y: 0.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!320 &6537704059888075000
-PlayableDirector:
+--- !u!114 &6943161791945774127
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6537704059888075004}
+  m_GameObject: {fileID: 6943161791945774128}
   m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 55f2ec39676a06c4b8e94c9c736c54b4, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 149959b8fefaf15428bbb6355347dc50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
