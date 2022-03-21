@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu]
-public class PlayerHealthSO : ScriptableObject
+public class SOPlayerHealth : ScriptableObject
 {
     public int currentHealth;
 }
