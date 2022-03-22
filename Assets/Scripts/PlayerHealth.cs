@@ -9,7 +9,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.tag.Equals("blabla"))
         {
             //currentHealthSO.currentHealth -= currentHealthSO.currentHealth;
-            currentHealth -= currentHealth;
+            currentHealth = currentHealth - 1;
         }
     }
 }

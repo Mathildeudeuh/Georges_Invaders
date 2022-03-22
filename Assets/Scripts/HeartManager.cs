@@ -2,31 +2,54 @@ using UnityEngine;
 
 public class HeartManager : MonoBehaviour
 {
-    public GameObject heart;
+    public GameObject[] heart;
     private PlayerHealth playerHealth;
+    public int life;
 
     private void Start()
     {
-        var player = GameObject.FindWithTag("player");
         playerHealth = GetComponent<PlayerHealth>();
     }
 
-    private void UpdateHeart(int heartNumber)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        foreach (Transform child in transform)
+        if (collision.tag.Equals("blabla"))
         {
-            Destroy(child.gameObject);
-        }
-
-        // Pour le premier élément et tant que le nombre d'éléments n'est pas égale à celui des coeurs, on ajoute un élément
-        for (var i = 0; i < heartNumber; i++)
-        {
-            Instantiate(heart, Vector3.zero, Quaternion.identity, transform);
+            //currentHealthSO.currentHealth -= currentHealthSO.currentHealth;
+            life = life - 1;
         }
     }
-
     private void Update()
     {
-        UpdateHeart(playerHealth.currentHealth);
+        /*
+        if (playerHealth.currentHealth <= 2)
+        {
+            Destroy(heart[2].gameObject);
+        }
+
+        if (playerHealth.currentHealth <= 1)
+        {
+            Destroy(heart[1].gameObject);
+        }
+
+        if (playerHealth.currentHealth <= 0)
+        {
+            Destroy(heart[0].gameObject);
+        }*/
+
+        if (life == 2)
+        {
+            Destroy(heart[2].gameObject);
+        }
+
+        else if (life == 1)
+        {
+            Destroy(heart[1].gameObject);
+        }
+
+        else if (life == 0)
+        {
+            Destroy(heart[0].gameObject);
+        }
     }
 }
