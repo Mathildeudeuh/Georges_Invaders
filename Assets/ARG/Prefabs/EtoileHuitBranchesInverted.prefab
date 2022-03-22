@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5439391050724775266}
   m_Layer: 0
   m_Name: EtoileHuitBranchesInverted
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e1ed62964b5434e8dd0ede494f2f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 7
 --- !u!114 &5439391050724775266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,6 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ff9cc223aebf814da78b5c04168e7bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frequency: 0.05
-  amplitude: 30
+  frequency: 0.5
+  amplitude: 2
   inverted: 1
