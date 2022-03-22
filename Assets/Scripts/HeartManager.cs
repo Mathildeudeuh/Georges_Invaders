@@ -13,7 +13,7 @@ public class HeartManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag.Equals("blabla"))
+        if (collision.tag.Equals("Enemy"))
         {
             //currentHealthSO.currentHealth -= currentHealthSO.currentHealth;
             life = life - 1; 
