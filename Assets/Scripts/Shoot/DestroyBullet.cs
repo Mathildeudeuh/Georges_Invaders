@@ -4,6 +4,6 @@ public class DestroyBullet : MonoBehaviour
 {
     void Update()
     {
-        Destroy(gameObject, 1);
+        Destroy(gameObject, 4);
     }
 }
