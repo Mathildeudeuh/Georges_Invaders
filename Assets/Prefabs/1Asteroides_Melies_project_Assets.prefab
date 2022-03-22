@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8636795433736217810}
   - component: {fileID: 2544560834019914177}
   - component: {fileID: 6491444895089178521}
+  - component: {fileID: -56985297622624690}
   m_Layer: 0
   m_Name: 1Asteroides_Melies_project_Assets
   m_TagString: Untagged
@@ -146,3 +147,16 @@ PolygonCollider2D:
       - {x: 2.46, y: -2.05}
       - {x: 2.51, y: -1.99}
       - {x: 2.61, y: -1.9}
+--- !u!114 &-56985297622624690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5877320971698074432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08e86cfbb45aab4594d41155f63d275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 10
