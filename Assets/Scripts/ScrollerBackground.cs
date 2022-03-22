@@ -1,14 +1,12 @@
 using UnityEngine;
 
-public class ScrollerBachground : MonoBehaviour
+public class ScrollerBackground : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float speedX;
+
 
     void Update()
     {
-        
+        transform.position += new Vector3(speedX * Time.deltaTime, 0);
     }
 }
