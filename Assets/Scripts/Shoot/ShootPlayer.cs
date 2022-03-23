@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ShootPlayer : MonoBehaviour
 {
+    public float shotDelay;
     [SerializeField] GameObject bullet;
 
     void Start()
@@ -17,7 +18,7 @@ public class ShootPlayer : MonoBehaviour
         while (true)
         {
             Shoot();
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(shotDelay);
 
         }
     }
