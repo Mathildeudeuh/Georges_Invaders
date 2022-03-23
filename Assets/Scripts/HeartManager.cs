@@ -18,6 +18,10 @@ public class HeartManager : MonoBehaviour
             //currentHealthSO.currentHealth -= currentHealthSO.currentHealth;
             life = life - 1; 
         }
+        if (collision.tag.Equals("enemyBullet"))
+        {
+            life = life - 1;
+        }
     }
     private void Update()
     {
@@ -47,7 +51,7 @@ public class HeartManager : MonoBehaviour
             Destroy(heart[1].gameObject);
         }
 
-        else if (life == 0)
+        else if (life <= 0)
         {
             Destroy(heart[0].gameObject);
             Destroy(gameObject);

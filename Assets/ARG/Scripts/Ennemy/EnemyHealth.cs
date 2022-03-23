@@ -16,7 +16,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (life == 0)
+        if (life <= 0)
             Destroy(gameObject);
     }
 
