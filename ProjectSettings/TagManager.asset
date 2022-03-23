@@ -6,6 +6,10 @@ TagManager:
   tags:
   - blabla
   - Enemy
+  - enemyBullet
+  - colliderSpawner
+  - PlayerBullet
+  - Destroy
   layers:
   - Default
   - TransparentFX
