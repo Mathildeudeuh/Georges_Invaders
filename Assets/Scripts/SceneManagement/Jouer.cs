@@ -21,7 +21,7 @@ public class Jouer: MonoBehaviour
         var screen = Instantiate(ScreenToLoad);
         DontDestroyOnLoad(screen);
 
-        var chargement = SceneManager.LoadSceneAsync("nomdescene");
+        var chargement = SceneManager.LoadSceneAsync("VerticalSlice");
         chargement.allowSceneActivation = false;
 
         while (chargement.isDone == false)
