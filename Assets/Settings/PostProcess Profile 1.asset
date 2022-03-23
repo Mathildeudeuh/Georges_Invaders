@@ -37,7 +37,7 @@ MonoBehaviour:
   active: 0
   m_AdvancedMode: 0
   mode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
 --- !u!114 &-6643198364857210014
 MonoBehaviour:
@@ -159,7 +159,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.359
+    m_Value: 0.379
     min: 0
     max: 1
   smoothness:
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   mode:
     m_OverrideState: 1
@@ -392,14 +392,14 @@ MonoBehaviour:
   active: 1
   m_AdvancedMode: 0
   shadows:
-    m_OverrideState: 0
-    m_Value: {r: 0, g: 0.8679245, b: 0.77832764, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 0.3584906, g: 0.32435718, b: 0.25872198, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
   highlights:
-    m_OverrideState: 0
-    m_Value: {r: 0, g: 0.6415094, b: 0.44843397, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 0.6950362, g: 1, b: 0.5518868, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -610,24 +610,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29fa0085f50d5e54f8144f766051a691, type: 3}
   m_Name: FilmGrain
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   type:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 10
   intensity:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
     min: 0
     max: 1
   response:
-    m_OverrideState: 0
-    m_Value: 0.8
+    m_OverrideState: 1
+    m_Value: 1
     min: 0
     max: 1
   texture:
-    m_OverrideState: 0
-    m_Value: {fileID: 0}
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: d2d6b224a8560214b97a1580bb199404, type: 3}
 --- !u!114 &6863423500982311480
 MonoBehaviour:
   m_ObjectHideFlags: 3
