@@ -19,5 +19,10 @@ public class PowerUp : MonoBehaviour
             Debug.Log("I'VE GOT THE POWER");
             powerUp.SetActive(false);
         }
+
+        if (backToThePast == true)
+        {
+            Debug.Log("C'est terminé, ne bouge plus !");
+        }
     }
 }
