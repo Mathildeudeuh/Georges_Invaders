@@ -27,7 +27,7 @@ public class HeartManager : MonoBehaviour
         else if (life == 0)
         {
             Destroy(heart[0].gameObject);
-            Destroy(gameObject);
+            //Destroy(gameObject);
            
         }
     }
