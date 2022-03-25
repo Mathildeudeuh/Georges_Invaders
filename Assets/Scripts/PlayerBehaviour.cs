@@ -8,11 +8,14 @@ public class PlayerBehaviour : MonoBehaviour
     private Vector2 moveVector2;
     private Rigidbody2D rb2D;
     private AddVelocity addVelocity;
+    //private PowerUp powerUp;
+    //private GameObject scroll;
 
     void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
         addVelocity = GetComponent<AddVelocity>();
+        //powerUp = GetComponent<PowerUp>();
     }
     public void MoveOnPerformed(InputAction.CallbackContext obj)
     {
@@ -20,6 +23,15 @@ public class PlayerBehaviour : MonoBehaviour
         if (!obj.performed)
             return;
     }
+
+    /*
+    public void PowerOnPerformed(InputAction.CallbackContext obj)
+    {
+        if (powerUp.backToThePast == true)
+        {
+            scroll.transform.position + new Vector3(20, 0, 0);
+        }
+    }*/
 
     private void FixedUpdate()
     {
