@@ -802,7 +802,6 @@ GameObject:
   - component: {fileID: 469729015}
   - component: {fileID: 469729014}
   - component: {fileID: 469729013}
-  - component: {fileID: 469729017}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -893,23 +892,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &469729017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 469729012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae5f3792b7bd61844a46a20bb53c621b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heart:
-  - {fileID: 1007064069}
-  - {fileID: 340048862}
-  - {fileID: 38955904}
-  life: 0
 --- !u!1 &642400833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1437,6 +1419,11 @@ RectTransform:
   m_AnchoredPosition: {x: 588, y: 295}
   m_SizeDelta: {x: 1176, y: 590}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1641282396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7809614159760792227, guid: 3e8ef66c5e711e64db5d204fb9363eeb, type: 3}
+  m_PrefabInstance: {fileID: 7809614161667853939}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1790514507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,7 +1514,7 @@ GameObject:
   - component: {fileID: 1949496853}
   - component: {fileID: 1949496852}
   - component: {fileID: 1949496851}
-  - component: {fileID: 1949496855}
+  - component: {fileID: 1949496856}
   m_Layer: 0
   m_Name: Joueur
   m_TagString: Player
@@ -1725,7 +1712,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1949496855
+--- !u!114 &1949496856
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1734,9 +1721,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1949496847}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae5f3792b7bd61844a46a20bb53c621b, type: 3}
+  m_Script: {fileID: 11500000, guid: 99e5b463292d01247ad1c0f747435be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerUp: {fileID: 1969200470}
+  powerUpUI: {fileID: 428867929}
+  backToThePast: 0
+  background: {fileID: 1641282396}
+  isRewinding: 0
   heart:
   - {fileID: 1007064069}
   - {fileID: 340048862}
@@ -2012,5 +2004,6 @@ PrefabInstance:
       propertyPath: powerUpUI
       value: 
       objectReference: {fileID: 428867929}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7809614160835789592, guid: 3e8ef66c5e711e64db5d204fb9363eeb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3e8ef66c5e711e64db5d204fb9363eeb, type: 3}
