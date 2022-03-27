@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PowerUp : MonoBehaviour
@@ -17,7 +19,7 @@ public class PowerUp : MonoBehaviour
             powerUpUI.SetActive(true);
             backToThePast = true;
             Debug.Log("I'VE GOT THE POWER");
-            powerUp.SetActive(false);
+            //powerUp.SetActive(false);
         }
 
         if (backToThePast == true)
