@@ -150,6 +150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 1
+  deadSound:
+  - {fileID: 8297946949249567592, guid: 3a43cc89dc4d7ad4f8e541c8d99de461, type: 3}
 --- !u!58 &613576536953955480
 CircleCollider2D:
   m_ObjectHideFlags: 0
