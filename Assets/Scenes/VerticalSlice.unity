@@ -3759,6 +3759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedX: -4
+  pos: 0
 --- !u!4 &1447893480 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7162569858106981343, guid: 16f78de77330c904a978f2af6b275de3, type: 3}
@@ -5112,7 +5113,8 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 796462070719032548, guid: 78d5ba0707d87a24ba22518309bab67b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 78d5ba0707d87a24ba22518309bab67b, type: 3}
 --- !u!1001 &1306181437242608939
 PrefabInstance:
