@@ -11,6 +11,7 @@ TagManager:
   - PlayerBullet
   - Destroy
   - PowerUp
+  - DestroyBullets
   layers:
   - Default
   - TransparentFX

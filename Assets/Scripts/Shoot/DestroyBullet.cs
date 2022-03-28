@@ -13,7 +13,7 @@ public class DestroyBullet : MonoBehaviour
             Destroy(gameObject);
         }
 
-        else if (collision.tag.Equals("Destroy"))
+        else if (collision.tag.Equals("DestroyBullets"))
         {
             Destroy(gameObject);
         }
