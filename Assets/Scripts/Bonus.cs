@@ -70,13 +70,7 @@ public class Bonus : MonoBehaviour
         {
             powerUpUI.SetActive(true);
             backToThePast = true;
-            Debug.Log("I'VE GOT THE POWER");
             powerUp.SetActive(false);
-        }
-
-        if (backToThePast == true)
-        {
-            Debug.Log("C'est terminé, ne bouge plus !");
         }
 
         if (collision.tag.Equals("Enemy"))
@@ -93,7 +87,7 @@ public class Bonus : MonoBehaviour
 
     private void Rewind()
     {
-        if (positions.Count > savePoint)
+        if (positions.Count > background.transform.position.x - savePoint)
         {
             background.transform.position = positions[0];
             positions.RemoveAt(0);
