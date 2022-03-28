@@ -6,37 +6,17 @@ public class Bonus : MonoBehaviour
 {
     public GameObject powerUp;
     public GameObject powerUpUI;
-    public bool backToThePast = false;
-
     public GameObject background;
-
-    public bool isRewinding = false;
-    List<Vector3> positions;
-
     public GameObject[] heart;
+    public AudioSource retour;
+
+    public bool backToThePast = false;
+    public bool isRewinding = false;
+
     public int life;
+    public int savePoint;
 
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag.Equals("PowerUp"))
-        {
-            powerUpUI.SetActive(true);
-            backToThePast = true;
-            Debug.Log("I'VE GOT THE POWER");
-            powerUp.SetActive(false);
-        }
-
-        if (backToThePast == true)
-        {
-            Debug.Log("C'est terminé, ne bouge plus !");
-        }
-
-        if (collision.tag.Equals("Enemy"))
-        {
-            life = life - 1;
-        }
-    }
+    List<Vector3> positions;
 
     void Start()
     {
@@ -49,36 +29,19 @@ public class Bonus : MonoBehaviour
         {
             Rewind();
         }
+
         else
         {
-            Record();
+            if (backToThePast == true)
+            {
+                Record();
+            }
         }
     }
-
-    private void Record()
-    {
-        positions.Insert(0, background.transform.position);
-    }
-
-    private void Rewind()
-    {
-        if (positions.Count > 0)
-        {
-            background.transform.position = positions[0];
-            positions.RemoveAt(0);
-            backToThePast = false;
-        }
-        else
-        {
-            StopBonus();
-        }
-
-    }
-
 
     void Update()
     {
-       if (life == 0)
+        if (life == 0)
         {
             if (backToThePast == true)
             {
@@ -96,14 +59,49 @@ public class Bonus : MonoBehaviour
             Destroy(heart[1].gameObject);
         }
 
-        else if (life == 0)
+        else if (life <= 0)
         {
             Destroy(heart[0].gameObject);
-            //Destroy(gameObject);
-
+            //animation mort
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag.Equals("PowerUp"))
+        {
+            powerUpUI.SetActive(true);
+            backToThePast = true;
+            powerUp.SetActive(false);
+        }
+
+        if (collision.tag.Equals("Enemy"))
+        {
+            life = life - 1;
+        }
+    }
+
+    private void Record()
+    {
+        positions.Insert(0, background.transform.position);
+    }
+
+    private void Rewind()
+    {
+        if (positions.Count > savePoint)
+        {
+            retour.Play();
+            background.transform.position = positions[0];
+            positions.RemoveAt(0);
+            backToThePast = false;
+        }
+
+        else
+        {
+            StopBonus();
+        }
+    }
+    
     private void StartBonus()
     {
         isRewinding = true;

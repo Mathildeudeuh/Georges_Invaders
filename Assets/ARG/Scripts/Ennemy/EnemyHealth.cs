@@ -18,6 +18,7 @@ public class EnemyHealth : MonoBehaviour
         if (collision.tag.Equals("PlayerBullet"))
         {
             life = life - 1;
+            //deadSound[0].Play();
         }
         
     }

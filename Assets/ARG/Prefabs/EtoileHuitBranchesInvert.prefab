@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 66bb80b20b05ec24f8d2ca17dd9ff5f1, type: 3}
-  m_Color: {r: 0.5447296, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -151,6 +151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 2
+  deadSound:
+  - {fileID: 8297946949249567592, guid: 3a43cc89dc4d7ad4f8e541c8d99de461, type: 3}
 --- !u!58 &8175481924342966063
 CircleCollider2D:
   m_ObjectHideFlags: 0
