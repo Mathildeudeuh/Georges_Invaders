@@ -4,6 +4,14 @@ public class HeartManager : MonoBehaviour
 {
     public GameObject[] heart;
     public int life;
+    private Animator animator;
+
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+       
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -30,9 +38,20 @@ public class HeartManager : MonoBehaviour
 
         else if (life <= 0)
         {
+
             Destroy(heart[0].gameObject);
+            Dying();
             //Destroy(gameObject);
-           
+
         }
+    }
+    private void Dying()
+    {
+
+        animator.SetBool("IsDead", true);
+
+        GetComponent<Collider2D>().enabled = false;
+        Destroy(gameObject, 1.2f);
+
     }
 }
