@@ -192,7 +192,7 @@ MonoBehaviour:
     m_Value: 2
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
     min: 0
     max: 1
   clamp:
@@ -374,7 +374,7 @@ MonoBehaviour:
     max: 180
   saturation:
     m_OverrideState: 1
-    m_Value: -5.7
+    m_Value: -95.3
     min: -100
     max: 100
 --- !u!114 &5272408658059793821
@@ -389,16 +389,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70afe9e12c7a7ed47911bb608a23a8ff, type: 3}
   m_Name: SplitToning
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   shadows:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {r: 0.3584906, g: 0.32435718, b: 0.25872198, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
   highlights:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {r: 0.6950362, g: 1, b: 0.5518868, a: 1}
     hdr: 0
     showAlpha: 0
@@ -718,7 +718,7 @@ MonoBehaviour:
     max: 200
   blueOutGreenIn:
     m_OverrideState: 1
-    m_Value: 184
+    m_Value: 200
     min: -200
     max: 200
   blueOutBlueIn:
