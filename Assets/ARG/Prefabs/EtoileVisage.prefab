@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -4528152134984952816}
   - component: {fileID: 1111757586444035288}
   - component: {fileID: 7467493709601901421}
+  - component: {fileID: 4039721254142608623}
   m_Layer: 0
   m_Name: EtoileVisage
   m_TagString: Enemy
@@ -165,6 +166,25 @@ CircleCollider2D:
   m_Offset: {x: -0.0014221668, y: -0.1351006}
   serializedVersion: 2
   m_Radius: 0.61785936
+--- !u!95 &4039721254142608623
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7828069082291071019}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7586ed1b26f3614298e44df4d8d1672, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &40354526453065814
 PrefabInstance:
   m_ObjectHideFlags: 0
