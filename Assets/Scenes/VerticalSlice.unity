@@ -3698,7 +3698,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1371248482
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3716,7 +3716,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -235.8, y: 219.6}
-  m_SizeDelta: {x: 70.33, y: 63.5}
+  m_SizeDelta: {x: 80, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1371248483
 MonoBehaviour:
@@ -3731,14 +3731,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9320468, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 66bb80b20b05ec24f8d2ca17dd9ff5f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4f558ca2c80bc894e90d2a24de718081, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3902,7 +3902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c028924c9ce6cc4e9c6658d40428186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedX: -4
+  speedX: -5
   pos: -400
 --- !u!4 &1447893480 stripped
 Transform:
@@ -4124,6 +4124,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6772271125307895784, guid: d6393ee5d9f65644f84c7e4f2dfeb4a1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4f558ca2c80bc894e90d2a24de718081, type: 3}
     - target: {fileID: 6772271125307895784, guid: d6393ee5d9f65644f84c7e4f2dfeb4a1, type: 3}
       propertyPath: m_SortingOrder
       value: 10
