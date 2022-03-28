@@ -8,6 +8,7 @@ public class Bonus : MonoBehaviour
     public GameObject powerUpUI;
     public GameObject background;
     public GameObject[] heart;
+    public AudioSource retour;
 
     public bool backToThePast = false;
     public bool isRewinding = false;
@@ -89,6 +90,7 @@ public class Bonus : MonoBehaviour
     {
         if (positions.Count > savePoint)
         {
+            retour.Play();
             background.transform.position = positions[0];
             positions.RemoveAt(0);
             backToThePast = false;
