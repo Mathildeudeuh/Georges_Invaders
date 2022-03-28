@@ -1842,7 +1842,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449368835}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.49, y: -0.09, z: -156.68877}
+  m_LocalPosition: {x: 12.44, y: -0.09, z: -156.68877}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6410,7 +6410,6 @@ GameObject:
   - component: {fileID: 1690569644}
   - component: {fileID: 1690569646}
   - component: {fileID: 1690569645}
-  - component: {fileID: 1690569647}
   m_Layer: 0
   m_Name: BonusScene
   m_TagString: PowerUp
@@ -6426,7 +6425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690569643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -85.18, y: -60.72, z: 448.8497}
+  m_LocalPosition: {x: -138.63, y: -60.72, z: 448.8497}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1399109894}
@@ -6509,25 +6508,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1690569647
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1690569643}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a6fdd141a2155324b88800ae69a98abf, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1744993874 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3019698118912564966, guid: 69a629c832019374594f5ee495c6037d, type: 3}
@@ -8207,7 +8187,7 @@ PrefabInstance:
       objectReference: {fileID: 1371248481}
     - target: {fileID: 289735896722852199, guid: 78d5ba0707d87a24ba22518309bab67b, type: 3}
       propertyPath: savePoint
-      value: -200
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 289735896722852199, guid: 78d5ba0707d87a24ba22518309bab67b, type: 3}
       propertyPath: background

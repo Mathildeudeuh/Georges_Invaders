@@ -17,8 +17,6 @@ public class Bonus : MonoBehaviour
 
     List<Vector3> positions;
 
-
-
     void Start()
     {
         positions = new List<Vector3>();
@@ -30,9 +28,13 @@ public class Bonus : MonoBehaviour
         {
             Rewind();
         }
+
         else
         {
-            Record();
+            if (backToThePast == true)
+            {
+                Record();
+            }
         }
     }
 
@@ -56,11 +58,10 @@ public class Bonus : MonoBehaviour
             Destroy(heart[1].gameObject);
         }
 
-        else if (life == 0)
+        else if (life <= 0)
         {
             Destroy(heart[0].gameObject);
-            //Destroy(gameObject);
-
+            //animation mort
         }
     }
 
@@ -84,15 +85,15 @@ public class Bonus : MonoBehaviour
         positions.Insert(0, background.transform.position);
     }
 
-
     private void Rewind()
     {
-        if (positions.Count > background.transform.position.x - savePoint)
+        if (positions.Count > savePoint)
         {
             background.transform.position = positions[0];
             positions.RemoveAt(0);
             backToThePast = false;
         }
+
         else
         {
             StopBonus();
