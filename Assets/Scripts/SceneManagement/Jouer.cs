@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Jouer: MonoBehaviour
 {
-    [SerializeField] private string SceneName;
+    [SerializeField] private string sceneName;
     [SerializeField] private GameObject ScreenToLoad;
 
 
@@ -21,7 +21,7 @@ public class Jouer: MonoBehaviour
         var screen = Instantiate(ScreenToLoad);
         DontDestroyOnLoad(screen);
 
-        var chargement = SceneManager.LoadSceneAsync("VerticalSlice");
+        var chargement = SceneManager.LoadSceneAsync(sceneName);
         chargement.allowSceneActivation = false;
 
         while (chargement.isDone == false)
@@ -29,12 +29,11 @@ public class Jouer: MonoBehaviour
             if (chargement.progress >= 0.9f)
             {
                 chargement.allowSceneActivation = true;
-                screen.GetComponent<Animator>().SetTrigger("disparait");
+                //screen.GetComponent<Animator>().SetTrigger("disparait");
                 Destroy(screen);
             }
 
             yield return new WaitForSeconds(3);
-
         }
 
     }
