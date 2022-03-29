@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3019698118912564966}
   - component: {fileID: 362862879608704872}
-  - component: {fileID: 7632195455494254801}
   - component: {fileID: 5177354007127080673}
+  - component: {fileID: 2147698807948132866}
   m_Layer: 0
   m_Name: 3Asteroides_Melies_project_Assets
   m_TagString: Enemy
@@ -84,19 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7632195455494254801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3242664952139624227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08e86cfbb45aab4594d41155f63d275, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life: 10
 --- !u!60 &5177354007127080673
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -178,3 +165,16 @@ PolygonCollider2D:
       - {x: -0.32906425, y: -0.152849}
       - {x: -0.2955753, y: -0.13614766}
       - {x: -0.27651104, y: -0.10731664}
+--- !u!114 &2147698807948132866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3242664952139624227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd8e467c8d0e764da0e61efbfca0bfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 7

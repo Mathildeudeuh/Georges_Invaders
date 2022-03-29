@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -5558676197581793947}
   - component: {fileID: 613576536953955480}
   - component: {fileID: 2392557692464263212}
+  - component: {fileID: 2813803337817558428}
   m_Layer: 0
   m_Name: EtoileHuitBranches
   m_TagString: Enemy
@@ -150,8 +151,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 1
-  deadSound:
-  - {fileID: 8297946949249567592, guid: 3a43cc89dc4d7ad4f8e541c8d99de461, type: 3}
 --- !u!58 &613576536953955480
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -180,3 +179,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 539511bcc79cfac409dd341930638bdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &2813803337817558428
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831193253014197254}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6eb0ff32fe36ec749b102ebb94a6e48b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

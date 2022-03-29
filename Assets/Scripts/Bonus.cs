@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class Bonus : MonoBehaviour
 {
+    private Animator animator;
     public GameObject powerUp;
     public GameObject powerUpUI;
     public GameObject background;
     public GameObject[] heart;
     public AudioSource retour;
+
+    /*public GameObject perdu;
+    public GameObject scene;*/
 
     public bool backToThePast = false;
     public bool isRewinding = false;
@@ -21,6 +25,7 @@ public class Bonus : MonoBehaviour
     void Start()
     {
         positions = new List<Vector3>();
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -62,7 +67,13 @@ public class Bonus : MonoBehaviour
         else if (life <= 0)
         {
             Destroy(heart[0].gameObject);
-            //animation mort
+             if (backToThePast == false)
+            {
+                animator.SetBool("IsDead", true);
+                Destroy(gameObject, 1);
+                //scene.SetActive(false);
+                //perdu.SetActive(true);
+            }
         }
     }
 

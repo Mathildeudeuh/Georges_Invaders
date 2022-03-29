@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8794974209358260863}
   - component: {fileID: 8794974209358260862}
   - component: {fileID: 2660611277742919446}
+  - component: {fileID: 7422185608015923277}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Enemy
@@ -355,10 +356,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCurve:
     serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -3.3111267
+      value: 0.98849106
+      inSlope: 0.0009832486
+      outSlope: 0.0009832486
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.8432708
+      value: 0.50445855
+      inSlope: -0.0006152578
+      outSlope: -0.0006152578
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.4733975
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 5.3792267
+      value: 0.99697876
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 1
+    m_PostInfinity: 1
     m_RotationOrder: 4
+--- !u!95 &7422185608015923277
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8794974209358260850}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 39b4b031f48fcbb47a36f8b1b3f166ce, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &8794974210536567120
 PrefabInstance:
   m_ObjectHideFlags: 0

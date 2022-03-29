@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4426272764981911502}
   - component: {fileID: 7249954802273113051}
   - component: {fileID: 4910971263572632829}
-  - component: {fileID: 6893443926690446031}
+  - component: {fileID: 2669590864249086344}
   m_Layer: 0
   m_Name: 5Asteroides_Melies_project_Assets
   m_TagString: Enemy
@@ -156,7 +156,7 @@ PolygonCollider2D:
       - {x: 0.27535182, y: -2.8962543}
       - {x: 0.37179708, y: -2.864263}
       - {x: 0.47401375, y: -2.851338}
---- !u!114 &6893443926690446031
+--- !u!114 &2669590864249086344
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4643209964007964325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08e86cfbb45aab4594d41155f63d275, type: 3}
+  m_Script: {fileID: 11500000, guid: 4fd8e467c8d0e764da0e61efbfca0bfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 10
+  life: 7
